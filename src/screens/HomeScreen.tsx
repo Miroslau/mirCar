@@ -1,8 +1,8 @@
-import React, {useCallback} from 'react';
-import {Text, View, ScrollView, Image, FlatList} from 'react-native';
-import {HomeScreenStyle} from "../styles/HomeScreenStyle";
+import React, { useCallback } from 'react';
+import { Text, View, ScrollView, Image, FlatList } from 'react-native';
+import { HomeScreenStyle } from "../styles/HomeScreenStyle";
 import { StatusBar } from "expo-status-bar";
-import {colors, parameters} from "../global/styles";
+import { colors } from "../global/styles";
 import { Icon } from 'react-native-elements';
 import { filterData } from "../global/data";
 import Card from "../components/Card";
@@ -48,6 +48,36 @@ const HomeScreen = (props: any) => {
                               showsHorizontalScrollIndicator={false}
                               keyExtractor={keyExtractor}
                               renderItem={RenderItem} />
+                </View>
+                <View style={HomeScreenStyle.view3}>
+                    <Text style={HomeScreenStyle.text3}>Where to ?</Text>
+                    <View style={HomeScreenStyle.view4}>
+                        <Icon type="material-community"
+                              name="clock-time-four"
+                              color={colors.grey1}
+                              size={26}
+                              {...props}
+                        />
+                        <Text style={{marginLeft: 5}}>Now</Text>
+                        <Icon type="material-community"
+                              name="chevron-down"
+                              color={colors.grey1}
+                              size={26}
+                              {...props}
+                        />
+                    </View>
+                </View>
+                <View style={HomeScreenStyle.view5}>
+                    <View style={HomeScreenStyle.view6}>
+                        <View style={HomeScreenStyle.view7}>
+                            <Icon type="material-community"
+                                  name="map-marker"
+                                  color={colors.grey1}
+                                  size={26}
+                                  {...props}
+                            />
+                        </View>
+                    </View>
                 </View>
             </ScrollView>
             <StatusBar style="light" backgroundColor="#2058c0" translucent={true} />
