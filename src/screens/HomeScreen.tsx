@@ -72,13 +72,54 @@ const HomeScreen = (props: any) => {
                         <View style={HomeScreenStyle.view7}>
                             <Icon type="material-community"
                                   name="map-marker"
-                                  color={colors.grey1}
-                                  size={26}
+                                  color={colors.black}
+                                  size={22}
                                   {...props}
                             />
                         </View>
+                        <View>
+                            <Text style={{fontSize: 18, color: colors.black}}>
+                                32 Olivia Road
+                            </Text>
+                            <Text style={{color: colors.grey3}}>35 Atlas Rd,Anderbolt</Text>
+                        </View>
+                    </View>
+                    <View>
+                        <Icon type="material-community"
+                              name="chevron-right"
+                              color={colors.grey}
+                              size={26}
+                              {...props}
+                        />
                     </View>
                 </View>
+                <View style={{...HomeScreenStyle.view5, borderBottomWidth: 0}}>
+                    <View style={HomeScreenStyle.view6}>
+                        <View style={HomeScreenStyle.view7}>
+                            <Icon type="material-community"
+                                  name="map-marker"
+                                  color={colors.black}
+                                  size={22}
+                                  {...props}
+                            />
+                        </View>
+                        <View>
+                            <Text style={{fontSize: 18, color: colors.black}}>
+                                32 Olivia Road
+                            </Text>
+                            <Text style={{color: colors.grey3}}>35 Atlas Rd,Anderbolt</Text>
+                        </View>
+                    </View>
+                    <View>
+                        <Icon type="material-community"
+                              name="chevron-right"
+                              color={colors.grey}
+                              size={26}
+                              {...props}
+                        />
+                    </View>
+                </View>
+                <Text style={HomeScreenStyle.text4}>Around you</Text>
             </ScrollView>
             <StatusBar style="light" backgroundColor="#2058c0" translucent={true} />
         </View>
