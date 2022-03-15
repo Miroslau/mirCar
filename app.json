@@ -17,13 +17,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mirCar",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDnnDG1NHeMAI9YxzJBqo2kg0fz7gSCIlI"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+
+      "package": "com.mirCar",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDnnDG1NHeMAI9YxzJBqo2kg0fz7gSCIlI"
+        }
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "FOREGROUND_SERVICE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"

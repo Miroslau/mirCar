@@ -100,9 +100,9 @@ export enum availableServices {
 }
 
 export const carsAround: Array<Around> = [
-    {latitude:-26.207487,longitude:28.236226},
-    {latitude:-26.202616,longitude:28.227718},
-    {latitude:-26.202424,longitude:28.236612},
-    {latitude:-26.208565,longitude:28.237191},
-    {latitude:-26.203598,longitude:28.239509},
+    {latitude:52.418268,longitude:31.006538},
+    {latitude:52.415402,longitude:31.007912},
+    {latitude:52.427140,longitude:30.977608},
+    {latitude:52.435304,longitude:31.007834},
+    {latitude:52.424732,longitude:31.014781},
 ]
