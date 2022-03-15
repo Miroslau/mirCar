@@ -135,7 +135,6 @@ export const HomeScreenStyle = StyleSheet.create({
     },
 
     map:{
-
         height: 150,
         marginVertical: 0,
         width: SCREEN_WIDTH*0.92
